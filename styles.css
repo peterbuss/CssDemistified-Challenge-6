@@ -1,0 +1,186 @@
+:root {
+
+    /*
+    - neutral light (search bar, card bg): #F5F7FA
+    - neutral medium (placeholder, light text): #737B8C
+    - neutral medium dark (paragraph text): #434956
+    - neutral dark (most text): #020203
+    - primary (blue elements): #0469DC
+    - secondary (purple): #5858DA
+    */
+
+    --clr-neutral-light: #F5F7FA;
+    --clr-neutral-medium: #737B8C;
+    --clr-neutral-medium-dark:  #434956;
+    --clr-neutral-dark: #020203;
+    --clr-primary: #0469DC;
+    --clr-secondary: #5858DA;
+
+    --clr-neutral-300: #A9AFBC;
+    --clr-neutral-400: #737B8C;
+    --clr-neutral-900: #020203;
+    --clr-primary-400: #FF3369;
+
+    /* font-sizes */
+    --fs-200: 0.75rem;    /* form lables and other text */
+    --fs-300: 1rem;       /* form placeholder */
+    --fs-400: 1.25rem;    /* button */
+    --fs-500: 1.375rem;   /* title */
+    --fs-600: 1.75rem;
+    --fs-900: 2.125rem;
+
+    --fw-300: 300;  /* Light */
+    --fw-400: 400;  /* Regular */
+    --fw-500: 500;  /* Medium */
+    --fw-800: 800;  /* Extrabold */
+  
+    --ff-base: font-family: 'DM Sans', 'Stalinist One';
+    --ff-accent: "Inter", sans-serif;
+
+    --spacer: 1rem;
+  }
+
+  /* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+  
+body {
+    font-family: 'DM Sans', 'Stalinist One', cursive, sans-serif;
+    font-size: 17px;
+    font-weight: var(--fw-400);
+    line-height: 1.0;
+    color: #fff;
+    background-image: url('assets/mars-bg.jpg');
+    background-size: cover;
+
+}
+
+.container {
+  /* background-color: firebrick; */
+}
+
+.nav {
+  font-family: 'DM Sans';
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav a:hover {
+  border: 1px solid #fff;
+  padding: 0.25em;
+}
+
+.part1 {
+  display: flex;
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5em;
+  padding: 2em 0 0 1em;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: var(--fw-400);
+  font-size: 22px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.numbers {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.number-heading {
+  font-family: 'Stalinist One', cursive;
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+.number {
+  text-align: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+  padding-bottom: 2em;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (width < 60em) {
+
+    .copyright {
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .numbers {
+      margin-bottom: 20px;
+      margin-top: 80px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .number-heading {
+      margin-bottom: 0.25em;
+    }
+
+    .number {
+      margin-bottom: 4em;
+    }
+
+    .title {
+      margin-top: 50px;
+    }
+
+    .part1 {
+      position: absolute;
+      top: 32em;
+      left: -35em;
+      background-color: 	#48260D; 
+      padding: 0.5em 8em;
+    }
+}
+
+@media (width < 40em) {
+
+  .part1 {
+    left: -12em;
+    top: 36em;
+    padding: 0.5em 1em;
+  }
+
+  nav {
+    margin: 0 1em;
+  }
+}
